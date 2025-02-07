@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #dfcbff 0%, #ffd5e9 100%);
+  color: black;
+  margin: 0;
+  height: 100svh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  border: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.btn-yes {
+  --font-size: 1.25rem;
+  --padding: 0.5rem;
+  --border-radius: 4px;
+
+  font-size: var(--font-size);
+  padding: var(--padding) calc(var(--padding) * 2);
+  border-radius: var(--border-radius);
+
+  background-color: #28a745;
+}
+
+.btn-no {
+  background-color: #dc3545;
+}
